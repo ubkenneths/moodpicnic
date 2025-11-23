@@ -15,13 +15,13 @@ export default function App() {
       <Header />
       <HeroSection />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <WeatherCard />
-        <BookingCalendar />
-        <ContactForm />
-        <ActivityCards />
+        {/* <WeatherCard /> */}
         <RecipeGallery />
+        <ContactForm />
+        <BookingCalendar />
+        {/* <ActivityCards />
         <PackingList />
-        <TipsSection />
+        <TipsSection /> */}
       </main>
       <footer className="bg-slate-800 text-white py-16 mt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

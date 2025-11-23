@@ -11,15 +11,19 @@ export function Header() {
               <Utensils className="size-5 text-rose-700" />
             </div>
             <span className="text-2xl font-light tracking-wide text-slate-800">
-              Picnic <span className="font-serif italic">Paradise</span>
+              Mood Picnic
             </span>
           </div>
           
           <nav className="hidden md:flex items-center gap-10">
             <a href="#weather" className="text-slate-600 hover:text-rose-500 transition-colors text-sm tracking-wide">
-              Weather
+              About Us
             </a>
-            <a href="#booking" className="text-slate-600 hover:text-rose-500 transition-colors text-sm tracking-wide">
+
+            <Button className="bg-rose-500 hover:bg-rose-600 rounded-full shadow-sm">
+              Book Now
+            </Button>
+            {/* <a href="#booking" className="text-slate-600 hover:text-rose-500 transition-colors text-sm tracking-wide">
               Book
             </a>
             <a href="#recipes" className="text-slate-600 hover:text-rose-500 transition-colors text-sm tracking-wide">
@@ -27,12 +31,10 @@ export function Header() {
             </a>
             <a href="#activities" className="text-slate-600 hover:text-rose-500 transition-colors text-sm tracking-wide">
               Activities
-            </a>
+            </a> */}
           </nav>
 
-          <Button className="bg-rose-500 hover:bg-rose-600 rounded-full shadow-sm">
-            Get Started
-          </Button>
+          
         </div>
       </div>
     </header>

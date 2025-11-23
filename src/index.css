@@ -319,6 +319,9 @@
     }
   }
 
+
+
+
   textarea {
     resize: vertical;
   }
@@ -756,6 +759,36 @@
 
   .cursor-pointer {
     cursor: pointer;
+  }
+
+  .package-content {
+    /* width: 1000px;
+    margin: auto; */
+  }
+  
+  .package-drink-options {
+    margin-top: 20px;
+  }
+
+  .packages-title {
+    font-size: 47px;
+  }
+
+  .packages-select-theme {
+    font-size: 42px;
+  }
+
+  .drinks-title {
+    font-size: 20px
+  }
+
+  .package-items {
+    padding: 8px 25px;
+    margin: 6px 6px;
+    display: inline-block;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 10px;
+}
   }
 
   .resize-none {
@@ -1499,6 +1532,18 @@
     opacity: .5;
   }
 
+  .main-video {
+    width: 100%;
+    max-height: 300vh;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .img-height {
+    height: 450px;
+    width: 100%;
+  }
+
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a), 0 4px 6px -4px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -2215,6 +2260,7 @@
     gap: calc(var(--spacing) * 2);
   }
 }
+
 
 :root {
   --font-size: 16px;

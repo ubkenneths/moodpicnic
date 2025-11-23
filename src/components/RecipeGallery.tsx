@@ -54,21 +54,59 @@ const recipes = {
   ]
 };
 
+
 export function RecipeGallery() {
   const [activeTab, setActiveTab] = useState<keyof typeof recipes>("appetizers");
 
   return (
-    <section id="recipes" className="py-16">
-      <div className="text-center mb-16">
-        <h2 className="text-4xl font-light tracking-wide text-slate-800 mb-4">
-          Delicious <span className="font-serif italic">Creations</span>
-        </h2>
-        <p className="text-slate-500 text-lg max-w-2xl mx-auto">
-          Recipes crafted with love for outdoor dining
-        </p>
+    <section id="recipes" className="">
+      <div className="py-16">
+        <div className="text-center mb-16">
+          {/* <h2 className="packages-title font-light tracking-wide text-slate-800 mb-4">
+            <span className="font-serif italic">What's included in your base Luxury Picnic?</span>
+          </h2> */}
+          <h2 class="text-4xl font-light tracking-wide text-slate-800 mb-4">
+            What's included in your <span class="font-serif italic">Base Luxury Picnic?</span>
+          </h2>
+          {/* <p className="text-slate-500 text-lg max-w-2xl mx-auto">
+            What's included in your base Luxury Picnic? 
+          </p> */}
+
+          
+            {/* <div className="package-drink-options">
+                <span className="text-slate-500 drinks-title">Drinks (Choose One):</span>
+                <div>
+                  <span className="package-items">Drinking Water</span>
+                  <span className="package-items">Sparkling Water</span>
+                  <span className="package-items">Carbonated Drinks</span>
+                  <span className="package-items">Non-alcoholic Sparkling Tea</span>
+                  <span className="package-items">Lemonade</span>
+                  <span className="package-items">Soda</span>
+                </div>
+              </div> */}
+        </div>
+
+        <div className="package-content text-center">
+            <span className="package-items">Blanket</span>
+            <span className="package-items">Multiple Pillows</span>
+            <span className="package-items">Extensive Decor</span>
+            <span className="package-items">Small Plates</span>
+            <span className="package-items">Cutlery</span>
+            <span className="package-items">Wine Glasses</span>
+            <span className="package-items">Water Goblets</span>
+            <span className="package-items">Napkins</span>
+            <span className="package-items">Dried Floral Arrangement</span>
+            <span className="package-items">Umbrella & Umbrella Stand</span>
+            <span className="package-items">Drinking Water</span>
+            <span className="package-items">Bakery - small assortments</span>
+          </div>
       </div>
 
-      <div className="flex justify-center mb-12">
+      
+
+      
+
+      {/* <div className="flex justify-center mb-12">
         <div className="inline-flex bg-slate-50 rounded-full p-1.5 border border-slate-200">
           <button
             onClick={() => setActiveTab("appetizers")}
@@ -101,10 +139,74 @@ export function RecipeGallery() {
             Desserts
           </button>
         </div>
-      </div>
+      </div> */}
 
-      <div className="grid md:grid-cols-2 gap-10">
-        {recipes[activeTab].map((recipe, index) => (
+      {/* <h2 className="packages-select-theme font-light tracking-wide text-slate-800 mb-4">
+        <span className="font-serif italic">Available Themes</span>
+        
+
+      </h2> */}
+      <div className="py-16">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-light tracking-wide text-slate-800 mb-4">
+            Available <span class="font-serif italic">Themes</span>
+          </h2>
+        </div>
+      
+        <div className="grid md:grid-cols-2 gap-10">
+          <div className="cursor-pointer bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100">
+            <div className="relative overflow-hidden">
+              <img className='object-cover img-height' src='/src/assets/red-theme.png'/>
+              {/* <div className="absolute top-6 right-6 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full text-sm flex items-center gap-2 shadow-sm">
+                <ChefHat className="size-4 text-slate-600" strokeWidth={1.5} />
+                <span className="text-slate-700">$300</span>
+              </div> */}
+              <div className="p-8">
+                  <h3 className="text-2xl font-light mb-6 text-slate-800">December Red</h3>
+                  
+                  <div className="flex gap-8 text-slate-500 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Clock className="size-4" strokeWidth={1.5} />
+                      <span>2 hours</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="size-4" strokeWidth={1.5} />
+                      <span>2-3 people</span>
+                    </div>
+                  </div> 
+                </div>
+            </div>
+          </div>
+              
+          <div className="relative overflow-hidden">
+            <div className="cursor-pointer bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100">
+              <img className='object-cover img-height' src='/src/assets/seaside-blue-theme.png'/>
+              {/* <div className="absolute top-6 right-6 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full text-sm flex items-center gap-2 shadow-sm">
+                <ChefHat className="size-4 text-slate-600" strokeWidth={1.5} />
+                <span className="text-slate-700">$300</span>
+              </div> */}
+
+              <div className="p-8">
+                  <h3 className="text-2xl font-light mb-6 text-slate-800">Seaside Blue</h3>
+                  
+                  <div className="flex gap-8 text-slate-500 text-sm">
+                    <div className="flex items-center gap-2">
+                      <Clock className="size-4" strokeWidth={1.5} />
+                      <span>2 hours</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Users className="size-4" strokeWidth={1.5} />
+                      <span>2-3 people</span>
+                    </div>
+                  </div> 
+                </div>
+            </div>
+          </div>
+        </div>
+
+                 
+
+         {/* {recipes[activeTab].map((recipe, index) => (
           <div key={index} className="bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100">
             <div className="relative h-72 overflow-hidden">
               <ImageWithFallback
@@ -131,7 +233,7 @@ export function RecipeGallery() {
               </div>
             </div>
           </div>
-        ))}
+        ))}  */}
       </div>
     </section>
   );
