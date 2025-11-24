@@ -17,3 +17,7 @@
   Run `npm run dev` to start the development server.
 
   
+  # To deploy to github pages
+
+  Run `npm run deploy` this will build the assets and then deploy it to github pages. Make sure the changes for the build are also committed or it may not show up properly.
+  
