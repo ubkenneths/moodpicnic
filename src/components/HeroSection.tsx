@@ -2,6 +2,8 @@ import { Button } from "./ui/button";
 import { Calendar, Map, Sparkles } from "lucide-react";
 import heroImage from 'figma:asset/3eeead790f435e152a5c8496aac24cdb4fb35a4f.png';
 
+import video from '/src/assets/video.mp4';
+
 export function HeroSection() {
   return (
     <section className="relative overflow-hidden h-[85vh] min-h-[600px]">
@@ -14,7 +16,7 @@ export function HeroSection() {
         /> */}
 
         <video className="main-video" autoPlay loop muted>
-          <source src="/src/assets/video.mp4" type="video/mp4"/>
+          <source src={video} type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
 

@@ -3,6 +3,10 @@ import { Card } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Clock, Users, ChefHat } from "lucide-react";
 
+import redTheme from '/src/assets/red-theme.png';
+import seasideBlueTheme from '/src/assets/seaside-blue-theme.png';
+
+
 const recipes = {
   appetizers: [
     {
@@ -156,7 +160,7 @@ export function RecipeGallery() {
         <div className="grid md:grid-cols-2 gap-10">
           <div className="cursor-pointer bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100">
             <div className="relative overflow-hidden">
-              <img className='object-cover img-height' src='/src/assets/red-theme.png'/>
+              <img className='object-cover img-height' src={redTheme} />
               {/* <div className="absolute top-6 right-6 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full text-sm flex items-center gap-2 shadow-sm">
                 <ChefHat className="size-4 text-slate-600" strokeWidth={1.5} />
                 <span className="text-slate-700">$300</span>
@@ -180,7 +184,7 @@ export function RecipeGallery() {
               
           <div className="relative overflow-hidden">
             <div className="cursor-pointer bg-white rounded-3xl overflow-hidden hover:shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100">
-              <img className='object-cover img-height' src='/src/assets/seaside-blue-theme.png'/>
+              <img className='object-cover img-height' src={seasideBlueTheme} />
               {/* <div className="absolute top-6 right-6 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-full text-sm flex items-center gap-2 shadow-sm">
                 <ChefHat className="size-4 text-slate-600" strokeWidth={1.5} />
                 <span className="text-slate-700">$300</span>
