@@ -91,13 +91,12 @@ export function RecipeGallery() {
         </div>
 
         <div className="package-content text-center">
-            <span className="package-items">Blanket fancy</span>
+            <span className="package-items">Picnic Blanket and Mat</span>
             <span className="package-items">Multiple Pillows</span>
             <span className="package-items">Extensive Decor</span>
             <span className="package-items">Small Plates</span>
             <span className="package-items">Cutlery</span>
             <span className="package-items">Wine Glasses</span>
-            <span className="package-items">Water Goblets</span>
             <span className="package-items">Napkins</span>
             <span className="package-items">Dried Floral Arrangement</span>
             <span className="package-items">Umbrella & Umbrella Stand</span>

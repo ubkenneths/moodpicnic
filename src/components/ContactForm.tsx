@@ -65,12 +65,49 @@ export function ContactForm() {
                 <Input id="eventTime" name="eventTime" type="time" required className="rounded-2xl border-slate-200 h-12" />
               </div>
               <div>
-                <Label htmlFor="location" className="text-slate-600 mb-2">Location Address</Label>
+                <Label htmlFor="location" className="text-slate-600 mb-2">Location</Label>
                 <Input id="location" name="location" placeholder="Street Address, City, State, Zip Code" required className="rounded-2xl border-slate-200 h-12" />
               </div>
               <div>
                 <Label htmlFor="guests" className="text-slate-600 mb-2">Number of Guests</Label>
-                <Input id="guests" name="guests" type="number" min="1" placeholder="10" required className="rounded-2xl border-slate-200 h-12" />
+                <Input id="guests" name="guests" type="number" min="1" placeholder="0" required className="rounded-2xl border-slate-200 h-12" />
+              </div>
+              <div>
+                <Label htmlFor="foodAllergies" className="text-slate-600 mb-2">Food allergies/restrictions</Label>
+                <Input id="foodAllergies" name="foodAllergies" required className="rounded-2xl border-slate-200 h-12" />
+              </div>
+              <div className="md:col-span-2">
+                <Label htmlFor="availableTheme" className="text-slate-600 mb-2">Available Themes</Label>
+                <Select name="availableTheme">
+                  <SelectTrigger id="availableTheme" className="rounded-2xl border-slate-200 h-12">
+                    <SelectValue placeholder="Select the theme" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="decemberRed">December Red</SelectItem>
+                    <SelectItem value="seasideBlue">Seaside Blue</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+              <div className="md:col-span-2">
+                <Label htmlFor="addOns" className="text-slate-600 mb-2">Add On(s)</Label>
+                <Select name="addOns">
+                  <SelectTrigger id="addOns" className="rounded-2xl border-slate-200 h-12">
+                    <SelectValue placeholder="Select add on(s)" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="nameDesign">Name Design for the event</SelectItem>
+                    <SelectItem value="freshFloral">Fresh Floral Arrangement for the picnic table: small, medium, large</SelectItem>
+                    <SelectItem value="cake">Cake (comes with serving knife and spatula)</SelectItem>
+                    <SelectItem value="charcuterie">Charcuterie Board (comes with cheeses, cheese knives, crackers, seasonal fruits + vegetables, and assortment of cookies)</SelectItem>
+                    <SelectItem value="bluetoothSpeaker">Bluetooth Speaker</SelectItem>
+                    <SelectItem value="polaroidCamera"> Polaroid Camera</SelectItem>
+                    <SelectItem value="beanbagChairs">Bean Bag chairs for extra comfort</SelectItem>
+                    <SelectItem value="smoresKit">Smores Kit (For outdoor events only)</SelectItem>
+                    <SelectItem value="paintingKit">Painting Kit</SelectItem>
+                    <SelectItem value="boardGames">Board Games</SelectItem>
+                    <SelectItem value="balloons">Balloons</SelectItem>
+                  </SelectContent>
+                </Select>
               </div>
               <div className="md:col-span-2">
                 <Label htmlFor="occasion" className="text-slate-600 mb-2">Special Occasion</Label>
@@ -79,6 +116,7 @@ export function ContactForm() {
                     <SelectValue placeholder="Select an occasion" />
                   </SelectTrigger>
                   <SelectContent>
+                    <SelectItem value="hangout">Friends' Hangout</SelectItem>
                     <SelectItem value="birthday">Birthday</SelectItem>
                     <SelectItem value="anniversary">Anniversary</SelectItem>
                     <SelectItem value="corporate">Corporate Event</SelectItem>
@@ -91,11 +129,11 @@ export function ContactForm() {
           </div>
 
           <div>
-            <Label htmlFor="message" className="text-slate-600 mb-2">Additional Requirements</Label>
+            <Label htmlFor="message" className="text-slate-600 mb-2">Special Requests</Label>
             <Textarea
               id="message"
               name="message"
-              placeholder="Tell us about any special requirements or preferences..."
+              placeholder="Tell us about any special requests/preferences...or if you have any other information regarding the occasion, please share here."
               rows={5}
               className="rounded-2xl border-slate-200"
             />
