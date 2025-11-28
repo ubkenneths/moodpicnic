@@ -17,13 +17,15 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* <WeatherCard /> */}
         <RecipeGallery />
-        <ContactForm />
+        {/* <ContactForm /> */}
         {/*<BookingCalendar />*/}
         {/* <ActivityCards />
         <PackingList />
         <TipsSection /> */}
       </main>
-      <footer className="bg-slate-800 text-white py-16 mt-24">
+      {/* <footer className="bg-slate-800 text-white py-16 mt-24"> */}
+      <footer className="bg-slate-800 text-white py-16">
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-slate-400 tracking-wide">© 2025 Minni Picnic — Creating beautiful moments</p>
         </div>

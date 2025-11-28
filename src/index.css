@@ -325,8 +325,10 @@
   text-align: center; }
 
  .book-now-link-header {
-    font-size: 15px;
-padding: 20px;}
+    padding: 5px 16px;
+    font-size: 18px;
+/* margin-right: 20px; */
+}
 
   .book-now-link {
     font-size: 45px;
@@ -763,6 +765,10 @@ padding: 40px;}
     transform-origin: var(--radix-select-content-transform-origin);
   }
 
+  .main-title-style {
+    font-family: "Arial Rounded MT Bold";
+  }
+
   .cursor-default {
     cursor: default;
   }
@@ -798,7 +804,11 @@ padding: 40px;}
     display: inline-block;
     border: 1px solid rgb(199, 199, 199);
     border-radius: 10px;
-}
+  }
+
+  .package-items {
+
+  }
   }
 
   .resize-none {

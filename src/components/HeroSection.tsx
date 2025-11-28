@@ -27,10 +27,10 @@ export function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center justify-center">
         <div className="text-center space-y-6 max-w-4xl">
           <div className="inline-block px-6 py-2 bg-white/90 backdrop-blur-md rounded-full shadow-lg">
-            <span className="text-sm tracking-wide text-slate-700">A Luxury Indoor & Outdoor Picnic Experience</span>
+            <span className="text-sm tracking-wide text-slate-700">A Luxury Picnic Experience</span>
           </div>
           
-          <h1 className="text-6xl sm:text-8xl font-light tracking-tight text-white drop-shadow-lg">
+          <h1 className="main-title-style text-6xl sm:text-8xl font-light tracking-tight text-white drop-shadow-lg">
             Minni Picnic
           </h1>
           
